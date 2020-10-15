@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<tittle >    </tittle>
+
+<style>
+table ,th ,td {border: 1px solid black;}
+table {border-collapse: collapse;}
+.image {width:30%;  height:    }
+.sno{width:5%}
+.details{width:40%}
+marquee{width :100%; background-color:lightblue;}
+
+    
+</style>
+
+
+<script type="text/javascript">
+var startl=0;
+var slidel = ["1.jpg","2.jpg"]; 
+var slider = ["3.jpg","4.jpg"];
+var slideb = ["5.jpg","6.jpg"];
+var slidea = ["7.jpg","8.jpg"];
+
+
+setInterval(image_lam,1000);
+
+function image_lam()
+{
+    
+ document.getElementById("lam").src=slidel[startl];
+ document.getElementById("rose").src=slider[startl];
+ document.getElementById("benz").src=slideb[startl];
+ document.getElementById("audi").src=slidea[startl];
+startl++;
+if(startl>1)
+{
+startl=0;
+
+}
+}
+
+
+
+
+
+
+
+
+</script>
+  
+
+
+</head> 
+
+<body onload=set_time()>
+<hr>
+<h1 style="background-color:black" id="tit"><font color ="red" size="10" > <center> SMUGGLED CARS FOR SALE  </center></font></h1>
+<hr>
+<table style="width:100%">
+   <tr >
+      <th  align="center"  class="sno"> S.NO </th>      <th align="center" class="image">          IMAGE</th>      <th align="center"class="details"> DETAILS  </th>     <th align="center"> URL   </ th> <th align="center">PRICE</th>     
+  </tr> 
+  <tr style="height:210px">
+       <td align="center" class="sno"> 1  </td>         <td align="center" class="image"> <img src="1.jpg" id="lam" alt="">    </td>        <td align="center" class="details"> Design is not sufficient to describe it. It is the signature of a brand which has created the history of the super sports cars all around the world. A Lamborghini must always be recognizable at first sight. This is why every detail of the Aventador Coupé has been conceived to embody the purest DNA of Lamborghini: a true design gem that expresses dynamism and aggression, which has made the carbon-fibe </td> <td align="center"> <a href="www.lamborghini.com">BUY  </a> </td> <td align="center"> 10,00,000 </td>
+  </tr>
+    
+  <tr style="height:220px"> 
+      <td align="center" class="sno">  2  </td>     <td align="center"  class="image">  <img src="3.jpg"  id="rose"  alt="">   </td>          <td align="center" class="details" > Rolls-Royce is a British luxury automobile manufacturer and a wholly owned subsidiary of BMW AG. Headquartered in United Kingdom, Rolls-Royce was founded by Charles Rolls and Henry Royce in the year 1904. In the 1990s BMW bought the rights to manufacture Rolls-Royce motor cars and started producing  </td> <td align="center"><a href="www.rolls royce.com"> BUY  </a>  </td>  <td align="center">  11,00,000 </td>
+  </tr>
+  <tr style="height:220px">
+  <td align="center" class="sno">  3 </td>           <td align="center"  class="image"> <img src="5.jpg" id="benz" alt="">    </td>       <td align="center" class="details">  In total, Mercedes-Benz has 14 models on sale in India. The Mercedes-Benz C-Class, Mercedes-Benz E-Class, Mercedes-Benz V-Class are amongst the most popular cars in their respective segments. Upcoming Mercedes-Benz cars in India include the A-Class Sedan, E-Class 2020, GLA 2020, AMG GLE 53 Coupe, EQC, CLA 2020.  </td>  <td align="center"> <a href="www.benz.com"> BUY </a> </td>  <td align="center"> 6,00,000 </td> 
+  </tr>
+<tr style="height:220px">
+  <td  align="center" class="sno">  4  </td>      <td align="center"  class="image">  <img src="7.jpg" id="audi" alt="">   </td>       <td align="center" class="details">  Audi car price starts at Rs 54.43 Lakh, the top line model starts at Rs 2.07 Crore. Audi offers 5 car models in India, including 2 new car models in SUV/MUV category, 3 in Sedan category. Audi has 7 upcoming cars in India, New Q3, Q7 Facelift, e-tron, Q2, e-tron Sportback, A3 New and e-tron GT.</td> <td align="center"> <a href="www.audi.com"> BUY </a> </td>   <td align="center" >4,00,000  </td>
+  </tr>
+</table>
+  
+<hr>
+<marquee>Name:giri prasad  Rollno:1906142  Class:cse-2 </marquee>
+<hr>
+
+
+</body>
+</html>
